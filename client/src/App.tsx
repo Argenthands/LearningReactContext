@@ -7,6 +7,8 @@ import './App.css';
 // Pages
 import {
 	Home,
+	//Products,
+	NoPage,
 } from './Pages'
 
 // Components
@@ -26,6 +28,7 @@ function App() {
 			<NavBar />
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="*" element={<NoPage />} />
 			</Routes>
 			<Footer />
 		</div>
