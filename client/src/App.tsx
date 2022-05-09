@@ -16,7 +16,8 @@ import {
 	NavBar,
 	Footer,
 } from './Components'
-
+// Context
+import { ExampleProvider } from './Context/ExampleContext';
 /*
 import logo from './logo.svg';
 <img src={logo} className="App-logo" alt="logo" />
@@ -24,14 +25,14 @@ import logo from './logo.svg';
 */
 function App() {
 	return (
-		<div className="App">
+		<ExampleProvider className="App">
 			<NavBar />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="*" element={<NoPage />} />
 			</Routes>
 			<Footer />
-		</div>
+		</ExampleProvider>
 	);
 }
 
