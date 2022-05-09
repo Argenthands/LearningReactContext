@@ -1,6 +1,6 @@
-import React from 'react'
 
-export default function NavBar() {
+
+export function NavBar() {
     return (
         <div className='NavBar'>
             NavBar

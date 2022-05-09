@@ -1,6 +1,6 @@
-import React from 'react'
 
-export default function Card() {
+
+export function Card() {
     return (
         <div className='Card'>
             Card
