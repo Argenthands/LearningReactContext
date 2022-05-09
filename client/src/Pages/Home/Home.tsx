@@ -10,7 +10,7 @@ export function Home() {
 	return (
 		<div className='Home'>
 			Home
-			{example.exampleState}
+			<Card props={example} />
 		</div>
 	)
 }
